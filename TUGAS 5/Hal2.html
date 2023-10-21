@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AKN Bojonegoro</title>
+  </head>
+  <body>
+    <h1>Javascript Can Change Images</h1>
+    <img id="myImage" onclick="changeImage()" src="img/KTM_RIFQI BAGUS FANANDRI.png" width="100" heiight="180" />
+    <p>Click the image to change it.</p>
+    <script>
+      function changeImage() {
+        var image = document.getElementById('myImage');
+        if (image.src.match('bulbon')) {
+          image.src = 'img/KTM_RIFQI BAGUS FANANDRI.png';
+        } else {
+          image.src = 'img/FANANDRI.png';
+        }
+      }
+    </script>
+  </body>
+</html>
